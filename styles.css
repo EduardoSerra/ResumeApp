@@ -1,0 +1,57 @@
+﻿body {    
+    background-color: #000000;
+    font-size:14px;
+}
+p {
+    text-align: center;
+}
+#paper {
+    background-color: #ffffff;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 50px 30px 50px;
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif; 
+}
+#paper h1{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 15px;
+    color: black;
+    margin: 0;
+}
+#paper h2{
+    font-weight: bold;
+    font-size: 16px;
+    color: #545454;
+    margin: 0;
+}
+#paper h3{
+    font-weight: bold;
+    display:inline-block;
+    margin: 0;
+}
+#paper li p{
+    text-align:justify;
+}
+#paper #personalItems{
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;    
+    margin: 0 30px 0 30px;
+}
+#paper #personalItems p{
+    margin: 0;
+}
+#paper #personalItems #name{
+    font-weight: bold;
+    font-size: 26px;
+    margin: 0 0 5px 0;
+}
+#paper #experience{        
+    margin: 0 30px 0 30px;
+    color: grey;
+}
+#paper #experience ul{
+    list-style-type: none;
+    padding: 0;
+}

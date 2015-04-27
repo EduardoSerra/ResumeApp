@@ -1,0 +1,76 @@
+exports.get = function(request, response) {
+    var resume = new Object;
+
+    resume.name = "Eduardo Serra";
+    resume.address = "141 Central Ave., Keuka Park, NY, 14478";
+    resume.phone = "(781) 333-7939";
+    resume.linkedIn = "https://linkedin.com/in/eduardoserra";
+    resume.email = "eduardojavierserra@gmail.com";    
+    resume.workExperience  = [
+        {
+            company: "KEUKA COLLEGE, Keuka Park, NY, United States",
+            position: "Graduate Student Employee for the Division of Business and Management",        
+            datePeriod: "September 2014 - Present",
+            responsibilities: "• Develop business intelligence tools and/or systems, including the design of dashboards and the related spreadsheets. • Meet with department heads, managers, and supervisors to assess systems requirements."
+        },
+        {
+            company: "GRUPO TX, Panama City, Panama",
+            position: "Software Engineer",        
+            datePeriod: "July 2013 - August 2014",
+            responsibilities: "• Supervise, assign, and coordinate the work of programmers, designers, and other engineering personnel in Colombia, Panamá, Nicaragua, San Salvador, and Venezuela. • Design, develop, implement and maintain tax collection systems using the .NET framework. • Consult with customers and other departments on proposals, project status, and technical aspects of software and systems design and maintenance. • Prepare and submit reports regarding projects specifications, activities, and status."
+        },
+        {
+            company: "VIITRU, Bogota, Colombia",
+            position: "Software Engineer",
+            datePeriod: "August 2011 - June 2013",
+            responsibilities: "• Design, develop, implement, and maintain Web applications using .NET framework. • Design, develop, implement, and maintain mobile applications for iOS and Android using Xamarin tools, such as Monotouch, Mono for Android, and Xamarin Studio. • Develop and maintain software projects plans, covering project objectives, technologies, systems, information specifications, and schedules. • Manage and coordinate releases with other IT groups, within the organization or 3rd parties."
+        },
+        {
+            company: "CAMPUSXITY, Caracas, Venezuela",
+            position: "Systems Analyst",
+            datePeriod: "September 2007 - August 2011",
+            responsibilities: "• Design and Implement an image retrieval application for the integrated management software of the Institute for the Welfare of the National Armed Forces (IPSFA). • Develop, document, and revise system design procedures, test procedures, and quality standards. • • Design and develop interactive software tutorials using Adobe Captivate."
+        }
+    ]    
+    resume.education = [
+        {
+            institution: "KEUKA COLLEGE, Keuka Park, NY, United States",
+            degree: "Master of Science in Management - International Business",
+            year: "Candidate, May 2015",
+            thesis: ""
+        },
+        {
+            institution: "UNIVERSIDAD METROPOLITANA, Caracas, Venezuela",
+            degree: "Systems Engineer",
+            year: "June 2012",
+            thesis: "Thesis: Health and well-being application for Windows Phone."
+        }
+    ]    
+    resume.skills = [
+        {
+            label: "Programming languages",
+            values: "C#, SQL, Visual Basic, JavaScript."
+        },
+        {
+            label: "Development methodologies",
+            values: "SCRUM, Lean, Agile."
+        },
+        {
+            label: "Arquitechtural patterns",
+            values: "MVC, MVVM."
+        },
+        {
+            label: "Spoken languages",
+            values: "Spanish native, english bilingual proficiency"
+        },
+        {
+            label: "Other",
+            values: "Windows Azure Mobile Services, Node.js, Entity Framework, Git, LINQ, HTML, CSS, JSON, Jquery, PHP, XML, XAML, Windows Phone, Xamarin Monotouch, Xamarin Mono for Android."
+        }
+    ]
+    response.send(statusCodes.OK, resume);
+};
+
+exports.post = function(request, response) {
+    response.send(statusCodes.OK, {message: "The POST method doesn't return any value"});
+};
