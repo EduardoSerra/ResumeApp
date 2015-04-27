@@ -14,6 +14,7 @@ $(function () {
             address: resume.address,
             phone: resume.phone,
             linkedIn: resume.linkedIn,
+            linkedInLink: "https://" + resume.linkedIn,
             email: resume.email,
             emailLink: "mailto:" + resume.email,
             workExperienceItems: resume.workExperience,

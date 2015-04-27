@@ -4,7 +4,7 @@ exports.get = function(request, response) {
     resume.name = "Eduardo Serra";
     resume.address = "141 Central Ave., Keuka Park, NY, 14478";
     resume.phone = "(781) 333-7939";
-    resume.linkedIn = "https://linkedin.com/in/eduardoserra";
+    resume.linkedIn = "linkedin.com/in/eduardoserra";
     resume.email = "eduardojavierserra@gmail.com";    
     resume.workExperience  = [
         {
